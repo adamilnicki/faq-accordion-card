@@ -78,11 +78,14 @@ body{
   display:flex;
   flex-direction: column;
   position:relative;
+  min-width:320px;
+  width:100%;
+  margin-bottom:10px;
 }
 
 .illustration{
   position:absolute;
-  top:-15%;
+  top:-22%; /*lub -15% jak nie display:none; na faq-answer*/
   left:5%;
   width:266px;
   height:196px;
@@ -106,13 +109,13 @@ body{
 }
 
 .faq-section{
-  margin-bottom:10px;
   width:100%;
   display:flex;
   flex-direction:row;
   justify-content:space-between;
-  padding-bottom:1.5rem;
-  margin-bottom:1.5rem;
+  padding-bottom:1rem;
+  margin-bottom:1rem;
+  margin-top:.6rem;
   border-bottom:1px solid hsl(240, 5%, 91%);
 }
 
@@ -124,7 +127,7 @@ body{
 }
 
 .faq-question{
-  margin-bottom:1rem;
+  margin-bottom:.7rem;
   font-size:1.1rem;
   display:flex;
   justify-content: space-between;
@@ -133,6 +136,13 @@ body{
 .faq-answer{
   color:hsl(240, 6%, 50%);
   line-height:1.5;
+  display:none;
+}
+
+.arrow-down img{
+  border:none;
+  background-color:transparent;
+  cursor:pointer;
 }
 
 .attribution{
