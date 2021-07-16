@@ -64,7 +64,7 @@ body{
   background-attachment: fixed;
   font-weight:400;
   color:hsl(238, 29%, 16%);
-  padding:12rem 2rem;
+  padding:12rem 2rem 2rem;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -128,7 +128,7 @@ body{
 
 .faq-question{
   margin-bottom:.7rem;
-  font-size:1.1rem;
+  font-size:1.2rem;
   display:flex;
   justify-content: space-between;
 }
@@ -139,7 +139,8 @@ body{
   display:none;
 }
 
-.arrow-down img{
+.arrow-down img,
+.faq-question{
   border:none;
   background-color:transparent;
   cursor:pointer;

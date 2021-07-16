@@ -19,6 +19,7 @@ function display1() {
   `;
 
   document.getElementById("arrow--1").setAttribute("onclick", "collapse1()");
+  document.getElementById("question--1").setAttribute("onclick", "collapse1()");
 }
 
 function collapse1() {
@@ -36,6 +37,7 @@ function collapse1() {
   illustration[0].style.cssText -= "";
 
   document.getElementById("arrow--1").setAttribute("onclick", "display1()");
+  document.getElementById("question--1").setAttribute("onclick", "display1()");
 }
 
 function display2() {
@@ -59,6 +61,7 @@ function display2() {
   `;
 
   document.getElementById("arrow--2").setAttribute("onclick", "collapse2()");
+  document.getElementById("question--2").setAttribute("onclick", "collapse2()");
 }
 
 function collapse2() {
@@ -76,6 +79,7 @@ function collapse2() {
   illustration[0].style.cssText -= "";
 
   document.getElementById("arrow--2").setAttribute("onclick", "display2()");
+  document.getElementById("question--2").setAttribute("onclick", "display2()");
 }
 
 function display3() {
@@ -99,6 +103,7 @@ function display3() {
   `;
 
   document.getElementById("arrow--3").setAttribute("onclick", "collapse3()");
+  document.getElementById("question--3").setAttribute("onclick", "collapse3()");
 }
 
 function collapse3() {
@@ -116,6 +121,7 @@ function collapse3() {
   illustration[0].style.cssText -= "";
 
   document.getElementById("arrow--3").setAttribute("onclick", "display3()");
+  document.getElementById("question--3").setAttribute("onclick", "display3()");
 }
 
 function display4() {
@@ -139,6 +145,7 @@ function display4() {
   `;
 
   document.getElementById("arrow--4").setAttribute("onclick", "collapse4()");
+  document.getElementById("question--4").setAttribute("onclick", "collapse4()");
 }
 
 function collapse4() {
@@ -156,6 +163,7 @@ function collapse4() {
   illustration[0].style.cssText -= "";
 
   document.getElementById("arrow--4").setAttribute("onclick", "display4()");
+  document.getElementById("question--4").setAttribute("onclick", "display4()");
 }
 
 function display5() {
@@ -179,6 +187,7 @@ function display5() {
   `;
 
   document.getElementById("arrow--5").setAttribute("onclick", "collapse5()");
+  document.getElementById("question--5").setAttribute("onclick", "collapse5()");
 }
 
 function collapse5() {
@@ -196,4 +205,5 @@ function collapse5() {
   illustration[0].style.cssText -= "";
 
   document.getElementById("arrow--5").setAttribute("onclick", "display5()");
+  document.getElementById("question--5").setAttribute("onclick", "display5()");
 }
