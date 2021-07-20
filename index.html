@@ -30,80 +30,110 @@
 
   <body>
     <div class="faq-container">
-      <img
-        src="images/illustration-woman-online-mobile.svg"
-        class="illustration"
-        id="illustration"
-      />
-      <img src="images/bg-pattern-mobile.svg" class="illustration-shadow" />
-      <div class="faq-title">
-        <h1>FAQ</h1>
+      <div class="left">
+        <div class="illustration" id="illustration"></div>
+        <div class="illustration-box"></div>
+        <div class="illustration-shadow"></div>
       </div>
-      <div class="faq-section">
-        <div class="qa">
-          <p class="faq-question" id="question--1" onclick="display1()">
-            How many team members can I invite?
-          </p>
-          <p class="faq-answer" id="answer--1">
-            You can invite up to 2 additional users on the Free plan. There is
-            no limit on team members for the Premium plan.
-          </p>
+      <div class="right">
+        <div class="faq-title">
+          <h1>FAQ</h1>
         </div>
-        <div class="arrow-down">
-          <img src="images/icon-arrow-down.svg" onclick="display1()" id="arrow--1"/>
-        </div>
-      </div>
-      <div class="faq-section">
-        <div class="qa">
-          <p class="faq-question" id="question--2" onclick="display2()">
-            What is the maximum file upload size?
-          </p>
-          <p class="faq-answer" id="answer--2">
-            No more than 2GB. All files in your account must fit your allotted
-            storage space.
-          </p>
-        </div>
-        <div class="arrow-down">
-          <img src="images/icon-arrow-down.svg" onclick="display2()" id="arrow--2"/>
-        </div>
-      </div>
-      <div class="faq-section">
-        <div class="qa">
-          <p class="faq-question" id="question--3" onclick="display3()">How do I reset my password?</p>
-          <p class="faq-answer" id="answer--3">
-            Click “Forgot password” from the login page or “Change password”
-            from your profile page. A reset link will be emailed to you.
-          </p>
-        </div>
-        <div class="arrow-down">
-          <img src="images/icon-arrow-down.svg" onclick="display3()" id="arrow--3"/>
-        </div>
-      </div>
-      <div class="faq-section">
-        <div class="qa">
-          <p class="faq-question" id="question--4" onclick="display4()">Can I cancel my subscription?</p>
-          <p class="faq-answer" id="answer--4">
-            Yes! Send us a message and we’ll process your request no questions
-            asked.
-          </p>
-        </div>
-        <div class="arrow-down">
-            <img src="images/icon-arrow-down.svg" onclick="display4()" id="arrow--4"/>
-        </div>
-      </div>
-      <div class="faq-section">
-        <div class="qa">
-          <p class="faq-question" id="question--5" onclick="display5()">
-            Do you provide additional support?
-          </p>
-          <p class="faq-answer" id="answer--5">
-            Chat and email support is available 24/7. Phone lines are open
-            during normal business hours.
-          </p>
-        </div>
-        <div class="arrow-down">
-            <img src="images/icon-arrow-down.svg" onclick="display5()" id="arrow--5"/>
-        </div>
+        <section class="faq-section section--1">
+          <div class="qa">
+            <p class="faq-question" id="question--1" onclick="display1()">
+              How many team members can I invite?
+            </p>
+            <p class="faq-answer" id="answer--1">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+          <div class="arrow-down">
+            <button 
+            class="btn"
+            onclick="display1()"
+            id="button--1"
+            value="off">
+            <img
+              src="images/icon-arrow-down.svg"
+              id="arrow--1"
+            />
+            </button>
+          </div>
+        </section>
+        <section class="faq-section section--2">
+          <div class="qa">
+            <p class="faq-question" id="question--2" onclick="display2()">
+              What is the maximum file upload size?
+            </p>
+            <p class="faq-answer" id="answer--2">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+          <div class="arrow-down">
+            <img
+              src="images/icon-arrow-down.svg"
+              onclick="display2()"
+              id="arrow--2"
+            />
+          </div>
+        </section>
+        <section class="faq-section section--3">
+          <div class="qa">
+            <p class="faq-question" id="question--3" onclick="display3()">
+              How do I reset my password?
+            </p>
+            <p class="faq-answer" id="answer--3">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+          <div class="arrow-down">
+            <img
+              src="images/icon-arrow-down.svg"
+              onclick="display3()"
+              id="arrow--3"
+            />
+          </div>
+        </section>
+        <section class="faq-section section--4">
+          <div class="qa">
+            <p class="faq-question" id="question--4" onclick="display4()">
+              Can I cancel my subscription?
+            </p>
+            <p class="faq-answer" id="answer--4">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
+          <div class="arrow-down">
+            <img
+              src="images/icon-arrow-down.svg"
+              onclick="display4()"
+              id="arrow--4"
+            />
+          </div>
+        </section>
+        <section class="faq-section section--5">
+          <div class="qa">
+            <p class="faq-question" id="question--5" onclick="display5()">
+              Do you provide additional support?
+            </p>
+            <p class="faq-answer" id="answer--5">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+          <div class="arrow-down">
+            <img
+              src="images/icon-arrow-down.svg"
+              onclick="display5()"
+              id="arrow--5"
+            />
+          </div>
+        </section>
       </div>
     </div>
 

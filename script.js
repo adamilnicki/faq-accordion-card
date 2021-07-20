@@ -1,23 +1,84 @@
+
+function display1(){
+  let currentvalue = document.getElementById('button--1').value;
+  if(currentvalue=="off"){
+    document.getElementById("question--1").style.fontWeight = "700";
+    document.getElementById("answer--1").style.cssText += `
+      display:block;
+     transition:display 1s ease-in;
+    `;
+    document.getElementById("arrow--1").style.cssText = `
+      transform-origin:center center;
+      transform:rotate(180deg);
+      transition:transform .2s;
+    `;
+    document.getElementById('button--1').value = "on";
+  }else if(currentvalue=="on"){
+    document.getElementById("question--1").style.fontWeight = "400";
+    document.getElementById("answer--1").style.cssText -= `
+      display:block;
+      transition:display 1s ease-in;
+    `;
+    document.getElementById("arrow--1").style.cssText = `
+      transform-origin:center center;
+      transform:rotate(-0deg);
+      transition:transform .2s;
+      `;
+    document.getElementById('button--1').value = "off";
+  }
+}
+
+/*document.getElementById("arrow--1").onclick=function(){
+  document.getElementById("question--1").style.fontWeight = "700";
+    document.getElementById("answer--1").style.cssText += `
+      display:block;
+      transition:display 1s ease-in;
+    `;
+    document.getElementById("arrow--1").style.cssText = `
+      transform-origin:center center;
+      transform:rotate(180deg);
+      transition:transform .2s;
+      `;
+    let illustration = document.getElementsByClassName("illustration");
+  illustration[0].style.cssText = `
+  top:-19.6%;
+  `;
+}*/
+
+/*var media = ("(min-width:1440px)");
 function display1() {
   collapse2();
   collapse3();
   collapse4();
   collapse5();
-  document.getElementById("question--1").style.fontWeight = "700";
-  document.getElementById("answer--1").style.cssText += `
-    display:block;
-    transition:display 1s ease-in;
-  `;
-  document.getElementById("arrow--1").style.cssText = `
-    transform-origin:center center;
-    transform:rotate(180deg);
-    transition:transform .2s;
+  if(media.matches){
+    document.getElementById("question--1").style.fontWeight = "700";
+    document.getElementById("answer--1").style.cssText += `
+      display:block;
+      transition:display 1s ease-in;
     `;
-  let illustration = document.getElementsByClassName("illustration");
+    document.getElementById("arrow--1").style.cssText = `
+      transform-origin:center center;
+      transform:rotate(180deg);
+      transition:transform .2s;
+      `;
+  }
+    else{
+      document.getElementById("question--1").style.fontWeight = "700";
+    document.getElementById("answer--1").style.cssText += `
+      display:block;
+      transition:display 1s ease-in;
+    `;
+    document.getElementById("arrow--1").style.cssText = `
+      transform-origin:center center;
+      transform:rotate(180deg);
+      transition:transform .2s;
+      `;
+      let illustration = document.getElementsByClassName("illustration");
   illustration[0].style.cssText = `
-  top:-20%;
+  top:-19.6%;
   `;
-
+    }
   document.getElementById("arrow--1").setAttribute("onclick", "collapse1()");
   document.getElementById("question--1").setAttribute("onclick", "collapse1()");
 }
@@ -57,7 +118,7 @@ function display2() {
     `;
   let illustration = document.getElementsByClassName("illustration");
   illustration[0].style.cssText = `
-  top:-20.6%;
+  top:-20.4%;
   `;
 
   document.getElementById("arrow--2").setAttribute("onclick", "collapse2()");
@@ -99,7 +160,7 @@ function display3() {
     `;
   let illustration = document.getElementsByClassName("illustration");
   illustration[0].style.cssText = `
-  top:-20%;
+  top:-19.8%;
   `;
 
   document.getElementById("arrow--3").setAttribute("onclick", "collapse3()");
@@ -141,7 +202,7 @@ function display4() {
     `;
   let illustration = document.getElementsByClassName("illustration");
   illustration[0].style.cssText = `
-  top:-20.6%;
+  top:-20.4%;
   `;
 
   document.getElementById("arrow--4").setAttribute("onclick", "collapse4()");
@@ -183,7 +244,7 @@ function display5() {
     `;
   let illustration = document.getElementsByClassName("illustration");
   illustration[0].style.cssText = `
-  top:-20.6%;
+  top:-20.4%;
   `;
 
   document.getElementById("arrow--5").setAttribute("onclick", "collapse5()");
@@ -207,3 +268,4 @@ function collapse5() {
   document.getElementById("arrow--5").setAttribute("onclick", "display5()");
   document.getElementById("question--5").setAttribute("onclick", "display5()");
 }
+*/

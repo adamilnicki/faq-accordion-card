@@ -81,22 +81,28 @@ body{
   min-width:320px;
   width:100%;
   margin-bottom:10px;
+  min-height:500px;
+  max-height:500px;
 }
 
 .illustration{
+  background-image:url(images/illustration-woman-online-mobile.svg);
+  background-repeat: no-repeat;
   position:absolute;
-  top:-22%; /*lub -15% jak nie display:none; na faq-answer*/
+  top:-22%;
   left:5%;
   width:266px;
   height:196px;
 }
 
 .illustration-shadow{
+  background-image:url(images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
   position:absolute;
   top:0;
   left:50%;
   width:240px;
-  height:auto;
+  height:100%;
   transform:translate(-50%);
   filter:blur(1px);
 }
@@ -149,3 +155,69 @@ body{
 .attribution{
   width:100%;
 }
+
+.btn{
+  border:none;
+  background-color:inherit;
+}
+
+@media (min-width:1440px){
+  .faq-container{
+    position:relative;
+    max-width:960px;
+    max-height:515px;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:0rem 10rem 0rem 0rem;
+  }
+
+  .left{
+    overflow:hidden;
+    width:60%;
+    min-height:470px;
+    max-height:500px;
+  }
+
+  .illustration{
+    background-image:url(images/illustration-woman-online-desktop.svg);
+    position:relative;
+    width:472px;
+    height:359px;
+    left:-12.5%;
+    top:12.5%;
+    /*width="472" height="359"*/
+    z-index:1;
+  }
+  .illustration-box{
+    background-image:url(images/illustration-box-desktop.svg);
+    position:absolute;
+    width:191px;
+    height:184px;
+    top:39.5%;
+    left:-9.7%;
+    z-index:3;
+    /*width="191" height="184"*/
+  }
+  .illustration-shadow{
+    background-image:url(images/bg-pattern-desktop.svg);
+    position:relative;
+    overflow:hidden;
+    width:966px;
+    height:945px;
+    top:-130%;
+    left:-15%;
+    /* width="966" height="945"*/
+    z-index:0;
+  }
+
+  .right{
+    display:flex;
+    flex-direction:column;
+    width:35%;
+  }
+
+  .faq-title{
+    text-align:left;
+    margin-top:6rem;
+  }
+};
