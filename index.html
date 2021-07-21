@@ -32,106 +32,96 @@
     <div class="faq-container">
       <div class="left">
         <div class="illustration" id="illustration"></div>
-        <div class="illustration-box"></div>
+        <div id="illustration-box"></div>
         <div class="illustration-shadow"></div>
       </div>
       <div class="right">
         <div class="faq-title">
           <h1>FAQ</h1>
         </div>
-        <section class="faq-section section--1">
+        <section class="faq-section 1" id="section--1" onmouseover='moveBox()' onmouseout='revertBox()'>
+          <div class="hideBtn 1" id="switchBtn--1">off</div>
           <div class="qa">
-            <p class="faq-question" id="question--1" onclick="display1()">
+            <p class="faq-question 1" id="question--1" onclick="display()">
               How many team members can I invite?
             </p>
-            <p class="faq-answer" id="answer--1">
+            <p class="faq-answer 1" id="answer--1">
               You can invite up to 2 additional users on the Free plan. There is
               no limit on team members for the Premium plan.
             </p>
           </div>
           <div class="arrow-down">
-            <button 
-            class="btn"
-            onclick="display1()"
-            id="button--1"
-            value="off">
-            <img
-              src="images/icon-arrow-down.svg"
-              id="arrow--1"
-            />
+            <button class="btn 1" onclick="display()" id="button--1">
+              <img src="images/icon-arrow-down.svg" id="arrow--1" class="1" />
             </button>
           </div>
         </section>
-        <section class="faq-section section--2">
+        <section class="faq-section 2" id="section--2" onmouseover='moveBox()' onmouseout='revertBox()'>
+          <div class="hideBtn 2" id="switchBtn--2">off</div>
           <div class="qa">
-            <p class="faq-question" id="question--2" onclick="display2()">
+            <p class="faq-question 2" id="question--2" onclick="display()">
               What is the maximum file upload size?
             </p>
-            <p class="faq-answer" id="answer--2">
+            <p class="faq-answer 2" id="answer--2">
               No more than 2GB. All files in your account must fit your allotted
               storage space.
             </p>
           </div>
           <div class="arrow-down">
-            <img
-              src="images/icon-arrow-down.svg"
-              onclick="display2()"
-              id="arrow--2"
-            />
+            <button class="btn 2" onclick="display()" id="button--2">
+              <img src="images/icon-arrow-down.svg" id="arrow--2" class="2" />
+            </button>
           </div>
         </section>
-        <section class="faq-section section--3">
+        <section class="faq-section 3" id="section--3" onmouseover='moveBox()' onmouseout='revertBox()'>
+          <div class="hideBtn 3" id="switchBtn--3">off</div>
           <div class="qa">
-            <p class="faq-question" id="question--3" onclick="display3()">
+            <p class="faq-question 3" id="question--3" onclick="display()">
               How do I reset my password?
             </p>
-            <p class="faq-answer" id="answer--3">
+            <p class="faq-answer 3" id="answer--3">
               Click “Forgot password” from the login page or “Change password”
               from your profile page. A reset link will be emailed to you.
             </p>
           </div>
           <div class="arrow-down">
-            <img
-              src="images/icon-arrow-down.svg"
-              onclick="display3()"
-              id="arrow--3"
-            />
+            <button class="btn 3" onclick="display()" id="button--3">
+              <img src="images/icon-arrow-down.svg" id="arrow--3" class="3" />
+            </button>
           </div>
         </section>
-        <section class="faq-section section--4">
+        <section class="faq-section 4" id="section--4" onmouseover='moveBox()' onmouseout='revertBox()'>
+          <div class="hideBtn 4" id="switchBtn--4">off</div>
           <div class="qa">
-            <p class="faq-question" id="question--4" onclick="display4()">
+            <p class="faq-question 4" id="question--4" onclick="display()">
               Can I cancel my subscription?
             </p>
-            <p class="faq-answer" id="answer--4">
+            <p class="faq-answer 4" id="answer--4">
               Yes! Send us a message and we’ll process your request no questions
               asked.
             </p>
           </div>
           <div class="arrow-down">
-            <img
-              src="images/icon-arrow-down.svg"
-              onclick="display4()"
-              id="arrow--4"
-            />
+            <button class="btn 4" onclick="display()" id="button--4">
+              <img src="images/icon-arrow-down.svg" id="arrow--4" class="4" />
+            </button>
           </div>
         </section>
-        <section class="faq-section section--5">
+        <section class="faq-section 5" id="section--5" onmouseover='moveBox()' onmouseout='revertBox()'>
+          <div class="hideBtn 5" id="switchBtn--5">off</div>
           <div class="qa">
-            <p class="faq-question" id="question--5" onclick="display5()">
+            <p class="faq-question 5" id="question--5" onclick="display()">
               Do you provide additional support?
             </p>
-            <p class="faq-answer" id="answer--5">
+            <p class="faq-answer 5" id="answer--5">
               Chat and email support is available 24/7. Phone lines are open
               during normal business hours.
             </p>
           </div>
           <div class="arrow-down">
-            <img
-              src="images/icon-arrow-down.svg"
-              onclick="display5()"
-              id="arrow--5"
-            />
+            <button class="btn 5" onclick="display()" id="button--5">
+              <img src="images/icon-arrow-down.svg" id="arrow--5" class="5" />
+            </button>
           </div>
         </section>
       </div>

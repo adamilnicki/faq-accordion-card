@@ -93,6 +93,7 @@ body{
   left:5%;
   width:266px;
   height:196px;
+  z-index:3;
 }
 
 .illustration-shadow{
@@ -102,9 +103,10 @@ body{
   top:0;
   left:50%;
   width:240px;
-  height:100%;
+  height:30%;
   transform:translate(-50%);
   filter:blur(1px);
+  z-index:1;
 }
 
 .faq-title{
@@ -137,6 +139,7 @@ body{
   font-size:1.2rem;
   display:flex;
   justify-content: space-between;
+  z-index:0;
 }
 
 .faq-answer{
@@ -159,6 +162,24 @@ body{
 .btn{
   border:none;
   background-color:inherit;
+}
+
+.hideBtn{
+  display:none;
+}
+
+.question-change{
+  font-weight:700;
+}
+
+.answer-change{
+  display:block;
+}
+
+.arrow-change{
+  transform-origin:center center;
+  transform:rotate(180deg);
+  transition:transform .2s;
 }
 
 @media (min-width:1440px){
@@ -186,9 +207,9 @@ body{
     left:-12.5%;
     top:12.5%;
     /*width="472" height="359"*/
-    z-index:1;
+    z-index:2;
   }
-  .illustration-box{
+  #illustration-box{
     background-image:url(images/illustration-box-desktop.svg);
     position:absolute;
     width:191px;
@@ -207,7 +228,7 @@ body{
     top:-130%;
     left:-15%;
     /* width="966" height="945"*/
-    z-index:0;
+    z-index:1;
   }
 
   .right{
