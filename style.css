@@ -182,7 +182,7 @@ body{
   transition:transform .2s;
 }
 
-@media (min-width:1440px){
+@media (min-width:700px){
   .faq-container{
     position:relative;
     max-width:960px;
